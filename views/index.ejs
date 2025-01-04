@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <%- include("partials/cabecalho.ejs") %>
+
+    <style>
+       
+        .container {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; 
+            padding: 20px;
+        }
+
+        
+        .container a {
+            display: block;  
+            padding: 15px;  
+            background-color: #f5a5c0;  
+            color: white;  
+            text-decoration: none;  
+            border-radius: 8px;  
+            font-weight: bold;  
+            text-align: center;   
+            transition: background-color 0.3s ease;  
+        }
+
+        
+        .container a:hover {
+            background-color: #e3326d; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/medicos/cadastrar">Cadastrar médicos</a>
+        <a href="/pacientes/cadastrar">Cadastrar pacientes</a>
+        <a href="/medicos">Listagem de médicos</a>
+        <a href="/pacientes">Listagem de pacientes</a>
+        <a href="/usuarios/cadastrar">Cadastrar usuários</a>
+        <a href="/usuarios">Listagem de usuários</a>
+    </div>
+
+    <%- include("partials/rodape.ejs") %>
+</body>
+</html>
